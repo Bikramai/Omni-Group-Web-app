@@ -1,0 +1,88 @@
+{% load static %}
+{% load i18n %}
+<header class="wrapper bg-soft-primary">
+        <nav class="navbar navbar-expand-lg classic transparent position-absolute navbar-dark">
+            <div class="container flex-lg-row flex-nowrap align-items-center">
+                <div class="navbar-brand w-100">
+                    <a href="/">
+                        <img class="logo-dark" src="{% static 'website/core/logos/saif-group-icon.webp' %}"
+                             srcset="{% static 'website/core/logos/saif-group-icon.webp' %} 2x" alt=""/>
+                        <img class="logo-light" src="{% static 'website/core/logos/saif-group-icon.webp' %}"
+                             srcset="{% static 'website/core/logos/saif-group-icon.webp' %} 2x" alt=""/>
+                    </a>
+                </div>
+                <div class="navbar-collapse offcanvas offcanvas-nav offcanvas-start">
+                    <div class="offcanvas-header d-lg-none">
+                        <h3 class="text-white fs-30 mb-0">Omi</h3>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                                aria-label="Close">
+                        </button>
+                    </div>
+                    <div class="offcanvas-body ms-lg-auto d-flex flex-column h-100">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="/">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Omi Group</a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item"><a class="dropdown-item" target="_blank" href="#">Omi Associates</a></li>
+                                    <li class="nav-item"><a class="dropdown-item" href="{% url 'website:enterprises' %}">Omi Enterprise</a></li>
+                                    <li class="nav-item"><a class="dropdown-item" href="{% url 'website:imports' %}">Omi Import</a></li>
+                                    <li class="nav-item"><a class="dropdown-item" href="{% url 'website:traders' %}">Omi Traders</a></li>
+                                    <li class="nav-item"><a class="dropdown-item" href="{% url 'website:logistics' %}">Omi Logistics</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{% url 'website:projects' %}">Projects</a>
+                            </li>
+{#                            <li class="nav-item">#}
+{#                                <a class="nav-link" href="#">Apartments</a>#}
+{#                            </li>#}
+{#                            <li class="nav-item">#}
+{#                                <a class="nav-link" href="#">Resident Services</a>#}
+{#                            </li>#}
+                            <li class="nav-item">
+                                <a class="nav-link" href="{% url 'website:team' %}">Our Team</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{% url 'website:about-us' %}">About Us</a>
+                            </li>
+                        </ul>
+                        <div class="offcanvas-footer d-lg-none">
+                            <div>
+                                <a href="mailto:contact.support@gmail.com">
+                                    <span class="__cf_email__">
+                                        contact.support@gmail.com
+                                    </span>
+                                </a>
+                                <br/>0302 12345677<br/>
+                                <nav class="nav social social-white mt-4">
+                                    <a href="#"><i class="uil uil-twitter"></i></a>
+                                    <a href="#"><i class="uil uil-facebook-f"></i></a>
+                                    <a href="#"><i class="uil uil-linkedin"></i></a>
+                                    <a href="#"><i class="uil uil-instagram"></i></a>
+                                    <a href="#"><i class="uil uil-youtube"></i></a>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {# button #}
+                <div class="navbar-other ms-lg-4">
+                    <ul class="navbar-nav flex-row align-items-center ms-auto">
+                        <li class="nav-item d-none d-md-block">
+                            <a href="{% url 'website:contact-us' %}" class="btn btn-sm btn-white rounded-pill">Contact Us</a>
+                        </li>
+                        <li class="nav-item d-lg-none">
+                            <button class="hamburger offcanvas-nav-btn"><span></span></button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    <div class="gtranslate_wrapper"></div>
+<script>window.gtranslateSettings = {"default_language":"en","languages":["en","ur","ps","fa","ar"],"wrapper_selector":".gtranslate_wrapper"}</script>
+<script src="https://cdn.gtranslate.net/widgets/latest/float.js" defer></script>
+    </header>

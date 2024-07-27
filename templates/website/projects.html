@@ -1,0 +1,183 @@
+{% extends 'website/base.html' %}
+{% load static %}
+{% load custom_tags %}
+
+{% block sub_head %}
+    Projects
+{% endblock %}
+
+{% block content %}
+
+    <section class="wrapper image-wrapper bg-image bg-overlay bg-overlay-300"
+             data-image-src="{% static 'website/img/photos/bg4.jpg' %}"
+             style="background-image: url(&{% static 'website/img/photos/bg16.png' %}&quot;);">
+        <div class="container pt-17 pb-19 pt-md-18 pb-md-17 text-center">
+            <div class="row">
+                <div class="col-lg-12 col-xl-12 col-xxl-12 mx-auto" data-cues="slideInDown" data-group="page-title"
+                     data-disabled="true">
+                    <h1 class="display-1 text-white fs-60 mb-4 px-md-15 px-lg-0" data-cue="slideInDown"
+                        data-group="page-title" data-show="true"
+                        style="animation-name: slideInDown; animation-duration: 700ms; animation-timing-function: ease; animation-delay: 0ms; animation-direction: normal; animation-fill-mode: both;">
+                        Lets See Our <span class="underline-3 style-2 yellow">Projects?</span>
+                    </h1>
+                    <br>
+                    <p class="lead fs-24 text-white lh-sm mb-7" data-cue="slideInDown"
+                       data-group="page-title" data-show="true"
+                       style="animation-name: slideInDown; animation-duration: 700ms; animation-timing-function: ease; animation-delay: 300ms; animation-direction: normal; animation-fill-mode: both;">
+                        Welcome to our project page! Here, you'll find information about our innovative and exciting
+                        real estate projects. We are passionate about our vision and believe that our project will have
+                        a significant impact in the field. Our goal is to make a positive difference in the lives of
+                        those who use it and invest with us. We are excited to share our journey with you and hope that
+                        you will join us in this exciting adventure. Thank you for your interest in our project!
+                    </p>
+
+
+                    {#                    <div data-cue="slideInDown" data-group="page-title" data-show="true"#}
+                    {#                         style="animation-name: slideInDown; animation-duration: 700ms; animation-timing-function: ease; animation-delay: 600ms; animation-direction: normal; animation-fill-mode: both;">#}
+                    {#                        <a class="btn btn-white rounded mb-10 mb-xxl-5" href="{% url 'website:contact-us' %}">Contact#}
+                    {#                            Us</a>#}
+                    {#                    </div>#}
+                </div>
+                <!-- /column -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+        <div class="overflow-hidden">
+            <div class="divider text-light mx-n2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 60">
+                    <path fill="currentColor" d="M0,0V60H1440V0A5771,5771,0,0,1,0,0Z"></path>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <section class="wrapper">
+        <div class="container py-14 pt-md-0 pb-md-16">
+
+            <div class="row">
+
+                <div class="row gx-md-5 gy-5">
+                    <form method="get">
+                        <div class="input-group">
+                            {{ filter_form }}
+                            <div class="input-group-append">
+                                <button class="btn btn-primary" type="submit">
+                                    <i class="uil uil-search"></i>
+                                </button>
+                                <a href="{% url 'website:projects' %}" class="btn btn-danger" type="submit">
+                                    <i class="uil uil-paint-tool"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="row gx-md-5 gy-5">
+                    {% if object_list %}
+                        {% for object in object_list %}
+                            <div class="col-md-6 col-xl-4">
+                                <div class="" role="group" aria-label=""
+                                     style="width: 330px; margin-right: 30px;">
+                                    <article>
+                                        <figure class="overlay overlay-1 hover-scale rounded mb-5"><a
+                                                href="{% url 'website:project' object.slug %}"> <img
+                                                src="
+
+
+                                                        {% if object.image %}{{ object.image.url }}{% else %}{% static 'website/img/photos/bg16.png' %}{% endif %}"
+                                                alt=""><span
+                                                class="bg"></span></a>
+                                            <figcaption>
+                                                <h5 class="from-top mb-0">View</h5>
+                                            </figcaption>
+                                        </figure>
+                                        <div class="post-header">
+                                            <div class="post-category text-line">
+                                                <a href="#" class="hover" rel="category">{{ object.property_type }}</a>
+
+                                            </div>
+                                            <h2 class="post-title h3 mt-1 mb-3">
+                                                <a class="link-dark" href="{% url 'website:project' object.slug %}">
+                                                    {{ object.name }}
+                                                </a>
+                                            </h2>
+                                        </div>
+                                        <div class="post-footer">
+                                            <ul class="post-meta">
+                                                <li class="post-date">
+                                                    <i class="uil uil-money-stack"></i>
+                                                    <span>
+                                                    RS {{ object.price_start }} - {{ object.price_end }}
+                                                </span>
+                                                </li>
+                                                <li class="post-comments"><i class="uil uil-compress"></i>
+                                                    {{ object.property_id }}
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    {% else %}
+                        <p class="px-3 text-danger">No data available.</p>
+                    {% endif %}
+                </div>
+
+                {% if object_list %}
+                    <div class="row gx-md-5 gy-5">
+                        <div class="">
+                            <ul class="pagination p-4">
+                                {% if object_list.has_previous %}
+                                    <li>
+                            <span>
+                                <a href="{% relative_url object_list.previous_page_number 'page' request.GET.urlencode %}">
+                                    Previous
+                                </a>
+                            </span>
+                                    </li>
+                                {% endif %}
+                                <li class="">
+                                    <span>Page {{ object_list.number }} of {{ object_list.paginator.num_pages }}.</span>
+                                </li>
+                                {% if object_list.has_next %}
+                                    <li>
+                            <span>
+                                <a href="{% relative_url object_list.next_page_number 'page' request.GET.urlencode %}">
+                                    Next
+                                </a>
+                            </span>
+                                    </li>
+                                {% endif %}
+                            </ul>
+                        </div>
+                    </div>
+                {% endif %}
+
+            </div>
+        </div>
+    </section>
+
+{% endblock %}
+
+{% block js_in %}
+    <script
+            src="https://code.jquery.com/jquery-3.6.4.min.js"
+            integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+            crossorigin="anonymous"></script>
+{% endblock %}
+
+{% block js_out %}
+    <script>
+        $(document).ready(function () {
+
+            $("#id_city option:first").text("-- Select City --");
+
+            $('label').hide();
+            $('input').addClass('form-control');
+            $('select').addClass('form-control');
+
+        });
+    </script>
+{% endblock js_out %}

@@ -1,0 +1,114 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="facebook-domain-verification" content="be70cd4atggjy0oqdlrf31orw7nqol"/>
+    {% block seo %}
+        <meta name="description" content="">
+        <meta name="keywords" content=".....">
+        <meta name="author" content="exarth, cybersync">
+        {% block sub_seo %}
+
+        {% endblock sub_seo %}
+    {% endblock seo %}
+
+    <title>
+        {% block head %}
+        Omni Group | {% block sub_head %}
+            Home
+        {% endblock sub_head %}
+        {% endblock head %}
+    </title>
+    <link rel="shortcut icon" href="{% static 'website/core/logos/saif-group-icon.webp' %}">
+    <link rel="stylesheet" href="{% static 'website/css/plugins.css' %}">
+    <link rel="stylesheet" href="{% static 'website/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'website/css/colors/purple.css' %}">
+    <link rel="stylesheet" href="{% static 'website/core/icons/icons.css' %}">
+    <!-- Meta Pixel Code -->
+<!-- Meta Pixel Code -->
+<!-- 
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1258069221809427');
+fbq('track', 'PageView');
+</script>
+-->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-REJXCT34WD"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-REJXCT34WD');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1258069221809427&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code-->
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1231685877474342&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code-->
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-T55KZDF');</script>
+<!-- End Google Tag Manager -->
+    <script>
+!function (w, d, t) {
+  w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var i="https://analytics.tiktok.com/i18n/pixel/events.js";ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=i,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};var o=document.createElement("script");o.type="text/javascript",o.async=!0,o.src=i+"?sdkid="+e+"&lib="+t;var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(o,a)};
+
+  ttq.load('CHM4LNBC77U4209UPAF0');
+  ttq.page();
+}(window, document, 'ttq');
+</script>
+
+</head>
+
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T55KZDF"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<div class="content-wrapper">
+
+    {% include 'website/header.html' %}
+
+    {% block content %}
+
+    {% endblock %}
+</div>
+
+{% include 'website/footer.html' %}
+
+<div class="progress-wrap">
+    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
+    </svg>
+</div>
+<script src="{% static 'website/js/plugins.js' %}"></script>
+<script src="{% static 'website/js/theme.js' %}"></script>
+{% block js_in %}
+
+{% endblock %}
+</body>
+
+</html>
+
+{% block js_out %}
+
+{% endblock %}

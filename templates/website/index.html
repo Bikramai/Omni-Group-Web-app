@@ -1,0 +1,749 @@
+{% extends 'website/base.html' %}
+{% load static %}
+
+{% block content %}
+    <section class="wrapper image-wrapper bg-image bg-overlay bg-overlay-400 bg-content text-white"
+             data-image-src="{% static 'website/img/photos/bg4.jpg' %}">
+        <div class="container pt-18 pb-16" style="z-index: 5; position:relative">
+            <div class="row gx-0 gy-12 align-items-center">
+                <div class="col-md-10 offset-md-1 offset-lg-0 col-lg-6 content text-center text-lg-start"
+                     data-cues="slideInDown" data-group="page-title" data-delay="600">
+                    <h1 class="display-2 mb-5 text-white">Higher Quality Of Living</h1>
+                    <p class="lead fs-lg lh-sm mb-7 pe-xl-10">GET YOUR DREAM APARTMENT</p>
+                    <div class="d-flex justify-content-center justify-content-lg-start" data-cues="slideInDown"
+                         data-group="page-title-buttons" data-delay="900">
+                        <span><a href="{% url 'website:projects' %}" class="btn btn-lg btn-white rounded-pill me-2">Explore Now</a></span>
+                        <span><a href="{% url 'website:contact-us' %}"
+                                 class="btn btn-lg btn-outline-white rounded-pill">
+                            Contact Us</a>
+                        </span>
+                    </div>
+                </div>
+                <!--/column -->
+                <div class="col-lg-5 offset-lg-1">
+                    <div class="swiper-container dots-over shadow-lg" data-margin="5" data-nav="true" data-dots="true">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+
+                                <div class="swiper-slide">
+                                    <img
+                                            src="{% static 'website/core/slider/1.jpg' %}"
+                                            srcset="{% static 'website/core/slider/1.jpg' %} 2x"
+                                            class="rounded" alt=""
+                                    />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img
+                                            src="{% static 'website/core/slider/2.jpg' %}"
+                                            srcset="{% static 'website/core/slider/2.jpg' %} 2x"
+                                            class="rounded" alt=""
+                                    />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img
+                                            src="{% static 'website/core/slider/3.jpg' %}"
+                                            srcset="{% static 'website/core/slider/3.jpg' %} 2x"
+                                            class="rounded" alt=""
+                                    />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img
+                                            src="{% static 'website/core/slider/4.jpg' %}"
+                                            srcset="{% static 'website/core/slider/4.jpg' %} 2x"
+                                            class="rounded" alt=""
+                                    />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img
+                                            src="{% static 'website/core/slider/5.jpg' %}"
+                                            srcset="{% static 'website/core/slider/5.jpg' %} 2x"
+                                            class="rounded" alt=""
+                                    />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img
+                                            src="{% static 'website/core/slider/6.jpg' %}"
+                                            srcset="{% static 'website/core/slider/6.jpg' %} 2x"
+                                            class="rounded" alt=""
+                                    />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img
+                                            src="{% static 'website/core/slider/7.jpg' %}"
+                                            srcset="{% static 'website/core/slider/7.jpg' %} 2x"
+                                            class="rounded" alt=""
+                                    />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img
+                                            src="{% static 'website/core/slider/8.jpg' %}"
+                                            srcset="{% static 'website/core/slider/8.jpg' %} 2x"
+                                            class="rounded" alt=""
+                                    />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img
+                                            src="{% static 'website/core/slider/9.jpg' %}"
+                                            srcset="{% static 'website/core/slider/9.jpg' %} 2x"
+                                            class="rounded" alt=""
+                                    />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img
+                                            src="{% static 'website/core/slider/10.jpg' %}"
+                                            srcset="{% static 'website/core/slider/10.jpg' %} 2x"
+                                            class="rounded" alt=""
+                                    />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img
+                                            src="{% static 'website/core/slider/11.jpg' %}"
+                                            srcset="{% static 'website/core/slider/11.jpg' %} 2x"
+                                            class="rounded" alt=""
+                                    />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img
+                                            src="{% static 'website/core/slider/12.jpg' %}"
+                                            srcset="{% static 'website/core/slider/12.jpg' %} 2x"
+                                            class="rounded" alt=""
+                                    />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img
+                                            src="{% static 'website/core/slider/13.jpg' %}"
+                                            srcset="{% static 'website/core/slider/13.jpg' %} 2x"
+                                            class="rounded" alt=""
+                                    />
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="wrapper bg-gray">
+        <div class="container py-14 py-md-16">
+            <div class="row mb-3">
+                <div class="col-md-10 col-xl-9 col-xxl-7 mx-auto text-center">
+                    <h2 class="display-4 mb-3 px-lg-14">Our Projects.</h2>
+                    <p class="">The Omi Group builds and markets residential and commercial high-rises. Take a look at
+                        our latest completed projects and upcoming developments.</p>
+                </div>
+            </div>
+            <div class="position-relative">
+                <div class="shape rounded-circle bg-soft-yellow rellax w-16 h-16" data-rellax-speed="1"
+                     style="bottom: 0.5rem; right: -1.7rem;"></div>
+                <div class="shape rounded-circle bg-line red rellax w-16 h-16" data-rellax-speed="1"
+                     style="top: 0.5rem; left: -1.7rem;"></div>
+                <div class="swiper-container dots-closer mb-6" data-margin="0" data-dots="true" data-items-xxl="4"
+                     data-items-lg="3" data-items-md="2" data-items-xs="1">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+
+                            {% for project in projects %}
+                                <div class="swiper-slide">
+                                    <div class="item-inner">
+                                        <div class="card">
+                                            <div class="card-body p-0 m-0">
+
+                                                <figure class="card-img-top overlay overlay-1 hover-scale">
+                                                    <a href="{% url 'website:project' project.slug %}">
+                                                        <img src="{{ project.image.url }}" alt=""/>
+                                                    </a>
+                                                    <figcaption>
+                                                        <h5 class="from-top mb-0">View</h5>
+                                                    </figcaption>
+                                                </figure>
+
+                                            </div>
+                                            <div class="card-body my-0 pb-0 text-center">
+                                                <h4 class="mb-0">{{ project.name }}</h4>
+                                                <div class="meta mb-2">{{ project.property_type }}</div>
+                                                <p class="">
+                                                    <i class="uil uil-money-stack"></i>
+                                                    Rs {{ project.price_start }} - {{ project.price_end }}
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            {% endfor %}
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="wrapper bg-light">
+        <div class="container py-14 py-md-17">
+            <div class="row text-center">
+                <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+                    <h2 class="fs-15 text-uppercase text-primary mb-3">Lets See?</h2>
+                    <h3 class="display-4 mb-10 px-xl-10">Why Omi Group Is The Best Choice?</h3>
+                </div>
+            </div>
+            <div class="position-relative mb-14 mb-md-17">
+                <div class="shape rounded-circle bg-soft-primary rellax w-16 h-16" data-rellax-speed="1"
+                     style="bottom: -0.5rem; right: -2.5rem; z-index: 0;"></div>
+                <div class="shape bg-dot primary rellax w-16 h-17" data-rellax-speed="1"
+                     style="top: -0.5rem; left: -2.5rem; z-index: 0;"></div>
+                <div class="row gx-md-5 gy-5 text-center">
+                    <div class="col-md-6 col-xl-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="icon btn btn-circle btn-lg btn-dark pe-none mb-3"><i
+                                        class="uil uil-analysis"></i></div>
+                                <h4>11 Years Experience</h4>
+                                <p class="mb-2">The team at Omni Group includes some of the most highly experienced and
+                                    knowledgeable professionals in our industry.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="icon btn btn-circle btn-lg btn-primary pe-none mb-3"><i
+                                        class="uil uil-shield-exclamation"></i></div>
+                                <h4>Save & Secure</h4>
+                                <p class="mb-2">The Omni Group uses high-quality materials to ensure the safety of your
+                                    property. All of our high-rise buildings are secure and safe to live.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="icon btn btn-circle btn-lg btn-info pe-none mb-3"><i
+                                        class="uil uil-analytics"></i></div>
+                                <h4>Proven Track Record</h4>
+                                <p class="mb-2">We have completed 5 out of 13 projects. One of the things that make us
+                                    unique is that we hand over the property before the agreed time.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="icon btn btn-circle btn-lg btn-warning pe-none mb-3"><i
+                                        class="uil uil-circuit"></i></div>
+                                <h4>Easy Installment Plan</h4>
+                                <p class="mb-2">The Omni Group offers very flexible rates and installment plans for
+                                    property purchases.
+                                    Secure your future with us today!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="icon btn btn-circle btn-lg btn-success pe-none mb-3"><i
+                                        class="uil uil-book-reader"></i></div>
+                                <h4>High skilled Team</h4>
+                                <p class="mb-2">We have more than 330 team members working in different domains and
+                                    departments. Everyone is experienced and highly motivated.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="icon btn btn-circle btn-lg btn-danger pe-none mb-3"><i
+                                        class="uil uil-moon"></i></div>
+                                <h4>Dream Location Projects</h4>
+                                <p class="mb-2">All of our projects are centrally located. Universities, hospitals,
+                                    schools and other amenities are within walking distance.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    {# PROJECTS, SERVICES #}
+    <section class="wrapper bg-gray">
+        <div class="container py-14 pt-md-0 pb-md-16">
+
+            {# PROJECTS #}
+            <div class="row mt-md-n50p mb-14 mb-md-7">
+                <div class="col-xl-10 mx-auto">
+                    <div class="card image-wrapper bg-full bg-image bg-overlay bg-overlay-400"
+                         data-image-src="{% static 'website/img/photos/bg2.jpg' %}">
+                        <div class="card-body p-9 p-xl-11">
+                            <div class="row align-items-center counter-wrapper gy-8 text-center text-white">
+                                <div class="col-6 col-lg-3">
+                                    <h3 class="counter counter-lg text-white">15</h3>
+                                    <p>Total Projects</p>
+                                </div>
+                                <div class="col-6 col-lg-3">
+                                    <h3 class="counter counter-lg text-white">5</h3>
+                                    <p>Completed Projects</p>
+                                </div>
+                                <div class="col-6 col-lg-3">
+                                    <h3 class="counter counter-lg text-white">10000+</h3>
+                                    <p>Happy Customers</p>
+                                </div>
+                                <div class="col-6 col-lg-3">
+                                    <h3 class="counter counter-lg text-white">500</h3>
+                                    <p>Expert Employees</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {# SERVICES #}
+            <div class="row">
+                <div class="col-lg-9 col-xl-8 col-xxl-7 mx-auto text-center">
+                    <h3 class="display-4 mb-6">Omni Group (Pvt) Ltd.</h3>
+                    <p class="mb-6 ">Omni Group (Private) Limited is a leading real estate development and marketing
+                        company located in Peshawar, Pakistan. Omni Group Pvt Ltd develops residential and commercial
+                        property and leisure attractions in Peshawar city. Apart from construction projects, the company
+                        also deals in Import and Export Services, Logistics Services, Solar Panels Systems, and Custom
+                        Clearance Services.
+                    </p>
+                </div>
+
+                <div class="row gx-md-5 gy-5">
+
+                    <div class="col-md-6 col-xl-4">
+                        <div class="card">
+                            <figure class="card-img-top overlay overlay-1 hover-scale"><a href="{% url 'website:imports'  %}"> <img
+                                    src="{% static 'website/core/services/imports.jpeg' %}" alt=""/></a>
+                                <figcaption>
+                                    <h5 class="from-top mb-0">Read More</h5>
+                                </figcaption>
+                            </figure>
+                            <div class="card-body">
+                                <div class="post-header">
+                                    <h2 class="post-title h3 mt-1 mb-3">
+                                        <a class="link-dark" href="{% url 'website:imports'  %}">
+                                            Omni IMPORTS
+                                        </a>
+                                    </h2>
+                                </div>
+                                <!-- /.post-header -->
+                                <div class="post-content">
+                                    <p style="text-align: justify">Omni Imports and Exports is known to be amongst the
+                                        prominent
+                                        importer, exporters, & wholesaler traders in Pakistan. We deal
+                                        in all kinds of the local and imported elevators, escalators &
+                                        its parts for high-rise buildings.
+                                    </p>
+                                </div>
+                                <!-- /.post-content -->
+                            </div>
+                            <!--/.card-body -->
+                            <div class="card-footer text-center">
+                                <a href="{% url 'website:imports'  %}"><b><i class="fa fa-link"></i> Visit</b></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-xl-4">
+                        <div class="card">
+                            <figure class="card-img-top overlay overlay-1 hover-scale"><a href="#" target="_blank">
+                                <img
+                                        src="{% static 'website/core/services/associatives.jpeg' %}" alt=""/></a>
+                                <figcaption>
+                                    <h5 class="from-top mb-0">Read More</h5>
+                                </figcaption>
+                            </figure>
+                            <div class="card-body">
+                                <div class="post-header">
+                                    <h2 class="post-title h3 mt-1 mb-3">
+                                        <a target="_blank" class="link-dark" href="#">
+                                            Omni ASSOCIATES
+                                        </a>
+                                    </h2>
+                                </div>
+                                <!-- /.post-header -->
+                                <div class="post-content">
+                                    <p style="text-align: justify">Omni Imports and Exports is known to be amongst the prominent
+                                        importer, exporters, & wholesaler traders in Pakistan. We deal
+                                        in all kinds of the local and imported elevators, escalators &
+                                        its parts for high-rise buildings.
+                                    </p>
+                                </div>
+                                <!-- /.post-content -->
+                            </div>
+                            <!--/.card-body -->
+                            <div class="card-footer text-center">
+                                <a target="_blank" href="#"><b><i class="fa fa-link"></i> Visit</b></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-xl-4">
+                        <div class="card">
+                            <figure class="card-img-top overlay overlay-1 hover-scale"><a href="{% url 'website:traders'  %}"> <img
+                                    src="{% static 'website/core/services/traders.jpeg' %}" alt=""/></a>
+                                <figcaption>
+                                    <h5 class="from-top mb-0">Read More</h5>
+                                </figcaption>
+                            </figure>
+                            <div class="card-body">
+                                <div class="post-header">
+                                    <h2 class="post-title h3 mt-1 mb-3">
+                                        <a class="link-dark" href="{% url 'website:traders'  %}">
+                                            Omni TRADERS
+                                        </a>
+                                    </h2>
+                                </div>
+                                <!-- /.post-header -->
+                                <div class="post-content">
+                                    <p style="text-align: justify">
+                                        Omni Traders is a leading trading services company based in Uganda.
+                                        We are offer logistical support to our trading partners in diamond market and
+                                        Pakistan we provides distribution & warehousing
+                                        services to our valuable clients.
+                                    </p>
+                                </div>
+                                <!-- /.post-content -->
+                            </div>
+                            <!--/.card-body -->
+                            <div class="card-footer text-center">
+                                <a href="{% url 'website:traders'  %}"><b><i class="fa fa-link"></i> Visit</b></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-xl-4">
+                        <div class="card">
+                            <figure class="card-img-top overlay overlay-1 hover-scale"><a href="{% url 'website:enterprises'  %}"> <img
+                                    src="{% static 'website/core/services/enterprise.jpg' %}" alt=""/></a>
+                                <figcaption>
+                                    <h5 class="from-top mb-0">Read More</h5>
+                                </figcaption>
+                            </figure>
+                            <div class="card-body">
+                                <div class="post-header">
+                                    <h2 class="post-title h3 mt-1 mb-3">
+                                        <a class="link-dark" href="{% url 'website:enterprises'  %}">
+                                            Omni ENTERPRISES
+                                        </a>
+                                    </h2>
+                                </div>
+                                <!-- /.post-header -->
+                                <div class="post-content">
+                                    <p style="text-align: justify">
+                                        Omni Enterprises is offering elevator and escalator services to our valued
+                                        customers across Pakistan. We are providing the international standard
+                                        energy-efficient elevators and escalators with cost-effective prices.
+                                    </p>
+                                </div>
+                                <!-- /.post-content -->
+                            </div>
+                            <!--/.card-body -->
+                            <div class="card-footer text-center">
+                                <a href="{% url 'website:enterprises'  %}"><b><i class="fa fa-link"></i> Visit</b></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-xl-4">
+                        <div class="card">
+                            <figure class="card-img-top overlay overlay-1 hover-scale"><a href="{% url 'website:logistics'  %}"> <img
+                                    src="{% static 'website/core/services/logistics.png' %}" alt=""/></a>
+                                <figcaption>
+                                    <h5 class="from-top mb-0">Read More</h5>
+                                </figcaption>
+                            </figure>
+                            <div class="card-body">
+                                <div class="post-header">
+                                    <h2 class="post-title h3 mt-1 mb-3">
+                                        <a class="link-dark" href="{% url 'website:logistics'  %}">
+                                            Omni LOGISTICS
+                                        </a>
+                                    </h2>
+                                </div>
+                                <!-- /.post-header -->
+                                <div class="post-content">
+                                    <p style="text-align: justify">
+                                        Omni Logistics is proud to introduce ourselves as one of the most secure &
+                                        reliable firms providing the services of Custom Clearance, Project Forwarding,
+                                        Warehouse Services, Domestic Transportation & Project Cargo Handling.
+                                    </p>
+                                </div>
+                                <!-- /.post-content -->
+                            </div>
+                            <!--/.card-body -->
+                            <div class="card-footer text-center">
+                                <a href="{% url 'website:logistics'  %}"><b><i class="fa fa-link"></i> Visit</b></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    {# TEAM #}
+    <section class="wrapper bg-light">
+        <div class="container py-15">
+
+            <div class="row mb-3">
+                <div class="col-md-10 col-lg-12 col-xl-10 col-xxl-9 mx-auto text-center">
+                    <h3 class="display-4 mb-7 px-lg-19 px-xl-18">
+                        Board Of Directors
+                    </h3>
+                    <p class="mb-6">The directors of the company are highly skilled, experienced, and have the valuable
+                        experience and financial resources. Their aim is to make this world a beautiful place to live
+                        for all of their customers.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row text-center gx-md-8 gx-xl-10 gy-8 gy-lg-0 align-items-center">
+
+                <div class="col">
+                    <div class="" role="group">
+                        <img class="rounded-circle w-20 mb-4"
+                             src="{% static 'website/core/team/Azizullah-Khan-Chairman.jpg' %}" alt="">
+                        <h4 class="mb-1">Arif Naqqa</h4>
+                        <div class="meta mb-2">Chairman</div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="" role="group">
+                        <img class="rounded-circle w-20 mb-4"
+                             src="{% static 'website/core/team/img2.jpeg' %}" alt="">
+                        <h4 class="mb-1">Jamshed Sheeda</h4>
+                        <div class="meta mb-2">Chief Executive Officer </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="" role="group">
+                        <img class="rounded-circle w-20 mb-4"
+                             src="{% static 'website/core/team/imran ullah.png' %}" alt="">
+                        <h4 class="mb-1">Teefi Butt</h4>
+                        <div class="meta mb-2">Member Board of Director</div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="" role="group">
+                        <img class="rounded-circle w-20 mb-4"
+                             src="{% static 'website/core/team/Anwar-Khan-Board-of-Director.jpg' %}" alt="">
+                        <h4 class="mb-1">Gogi Butt</h4>
+                        <div class="meta mb-2">Member Board of Director</div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="" role="group">
+                        <img class="rounded-circle w-20 mb-4"
+                             src="{% static 'website/core/team/Junaid-Anwar-Marketing-Director.jpg' %}" alt="">
+                        <h4 class="mb-1">Taji Khokhar</h4>
+                        <div class="meta mb-2">Director Marketing</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="wrapper bg-gray">
+        <div class="container py-14 py-md-16">
+            <div class="row">
+                <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2 mx-auto text-center">
+                    <h2 class="fs-15 text-uppercase text-muted mb-3">Happy Customers</h2>
+                    <h3 class="display-4 mb-6 px-xl-10 px-xxl-15">Don't take our word for it. See what customers are
+                        saying about us.</h3>
+                </div>
+            </div>
+
+            <div data-cue="fadeIn" data-show="true"
+                 style="animation-name: fadeIn; animation-duration: 700ms; animation-timing-function: ease; animation-delay: 0ms; animation-direction: normal; animation-fill-mode: both;">
+                <div class="swiper-container dots-closer mb-6 swiper-container-0" data-margin="0" data-dots="true"
+                     data-items-xl="3" data-items-md="2" data-items-xs="1">
+                    <div class="swiper swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden">
+                        <div class="swiper-wrapper" id="swiper-wrapper-bad371341fcf6914" aria-live="off"
+                             style="cursor: grab; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;">
+
+                            <div class="swiper-slide" role="group" aria-label="3 / 6" style="width: 370px;">
+                                <div class="item-inner">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <span class="ratings five mb-3"></span>
+                                            <blockquote class="icon mb-0">
+                                                <p>“Indeed a best platform for beginners like me to invest. Keep it up
+                                                    ”</p>
+                                                <div class="blockquote-details">
+                                                    <img class="rounded-circle w-12"
+                                                         src="{% static 'website/core/base/man.png' %}"
+                                                         srcset="{% static 'website/core/base/man.png' %} 2x" alt="">
+                                                    <div class="info">
+                                                        <h5 class="mb-0">Junaid Marwat</h5>
+                                                    </div>
+                                                </div>
+                                            </blockquote>
+                                        </div>
+                                        <!-- /.card-body -->
+                                    </div>
+                                    <!-- /.card -->
+                                </div>
+                                <!-- /.item-inner -->
+                            </div>
+                            <div class="swiper-slide" role="group" aria-label="4 / 6" style="width: 370px;">
+                                <div class="item-inner">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <span class="ratings five mb-3"></span>
+                                            <blockquote class="icon mb-0">
+                                                <p>“Omni Group Pvt ltd is the one of top real estate and construction
+                                                    company in
+                                                    Uganda. There services to the clients and investors are extremely
+                                                    valuable
+                                                    and profitable”</p>
+                                                <div class="blockquote-details">
+                                                    <img class="rounded-circle w-12"
+                                                         src="{% static 'website/core/base/man.png' %}"
+                                                         srcset="{% static 'website/core/base/man.png' %} 2x" alt="">
+                                                    <div class="info">
+                                                        <h5 class="mb-0">Dilfuza</h5>
+                                                    </div>
+                                                </div>
+                                            </blockquote>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" role="group" aria-label="5 / 6" style="width: 370px;">
+                                <div class="item-inner">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <span class="ratings five mb-3"></span>
+                                            <blockquote class="icon mb-0">
+                                                <p>“I would say that Omni group is one of trustworthy real estate
+                                                    company.
+                                                    Highly recommend.”</p>
+                                                <div class="blockquote-details">
+                                                    <img class="rounded-circle w-12"
+                                                         src="{% static 'website/core/base/women.png' %}"
+                                                         srcset="{% static 'website/core/base/women.png' %} 2x" alt="">
+                                                    <div class="info">
+                                                        <h5 class="mb-0">jumali</h5>
+                                                    </div>
+                                                </div>
+                                            </blockquote>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+                    <div class="swiper-controls">
+                        <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal">
+                            <span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0"
+                                  role="button" aria-label="Go to slide 1" aria-current="true"></span><span
+                                class="swiper-pagination-bullet" tabindex="0" role="button"
+                                aria-label="Go to slide 2"></span><span class="swiper-pagination-bullet" tabindex="0"
+                                                                        role="button" aria-label="Go to slide 3"></span><span
+                                class="swiper-pagination-bullet" tabindex="0" role="button"
+                                aria-label="Go to slide 4">
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--
+     <section class="wrapper bg-light">
+        <div class="container py-15">
+
+            <div class="row mb-3">
+                <div class="col-md-10 col-lg-12 col-xl-10 col-xxl-9 mx-auto text-center">
+                    <h3 class="display-4 mb-7 px-lg-19 px-xl-18">
+                        Our Marketing Partners
+                    </h3>
+                </div>
+            </div>
+
+            <div class="row text-center gx-md-8 gx-xl-10 gy-8 gy-lg-0 align-items-center">
+
+                <div class="col">
+                    <div class="" role="group">
+                        <img class="rounded-circle w-20 mb-4"
+                             src="{% static 'website/core/marketing/prefectus.jpeg' %}" alt="">
+                        <h4 class="mb-1">Perfectus Marketing</h4>
+                        <div class="meta mb-2">First Floor Deans Trade Centre Peshawar</div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="" role="group">
+                        <img class="rounded-circle w-20 mb-4"
+                             src="{% static 'website/core/marketing/zardana.jpeg' %}" alt="">
+                        <h4 class="mb-1">Zardana Marketing</h4>
+                        <div class="meta mb-2">First Floor Deans Trade Centre Peshawar</div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="" role="group">
+                        <img class="rounded-circle w-20 mb-4"
+                             src="{% static 'website/core/marketing/rational.jpg' %}" alt="">
+                        <h4 class="mb-1">Rational Marketing</h4>
+                        <div class="meta mb-2">Town Heights, University Town Peshawar</div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="" role="group">
+                        <img class="rounded-circle w-20 mb-4"
+                             src="{% static 'website/core/marketing/connection.jpeg' %}" alt="">
+                        <h4 class="mb-1">Market Connections </h4>
+                        <div class="meta mb-2">5th Floor Mall of KPK Peshawar</div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="" role="group">
+                        <img class="rounded-circle w-20 mb-4"
+                             src="{% static 'website/core/marketing/Jinz.jpeg' %}" alt="">
+                        <h4 class="mb-1">Jinz Marketing </h4>
+                        <div class="meta mb-2">Town Heights, University Town Peshawar</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="" role="group">
+                        <img class="rounded-circle w-20 mb-4"
+                             src="{% static 'website/core/marketing/Deal_Deals.jpg' %}" alt="">
+                        <h4 class="mb-1">Deal & Deals  </h4>
+                        <div class="meta mb-2">5TH FLOOR MALL OF KPK PESHAWAR</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="" role="group">
+                        <img class="rounded-circle w-20 mb-4"
+                             src="{% static 'website/core/marketing/Abu_Zaid_Real_Estate.jpg' %}" alt="">
+                        <h4 class="mb-1">Abu Zaid Real Estate</h4>
+                        <div class="meta mb-2">Main Bazar Malakand road Sakhakot,
+Tehsil Dargai, Distt Malakand, KPK</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+     -->
+
+{% endblock %}
+

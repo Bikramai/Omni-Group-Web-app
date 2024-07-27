@@ -1,0 +1,452 @@
+{% extends 'website/base.html' %}
+{% load static %}
+
+{% block sub_head %}
+    Enterprises
+{% endblock %}
+
+{% block content %}
+
+    {# HERO #}
+    <section class="wrapper image-wrapper bg-image bg-overlay bg-overlay-300"
+             data-image-src="{% static 'website/img/photos/bg4.jpg' %}"
+             style="background-image: url(&{% static 'website/img/photos/bg16.png' %}&quot;);">
+        <div class="container pt-17 pb-19 pt-md-18 pb-md-17 text-center">
+            <div class="row">
+                <div class="col-lg-8 col-xl-7 col-xxl-6 mx-auto" data-cues="slideInDown" data-group="page-title"
+                     data-disabled="true">
+                    <h1 class="display-1 text-white fs-60 mb-4 px-md-15 px-lg-0" data-cue="slideInDown"
+                        data-group="page-title" data-show="true"
+                        style="animation-name: slideInDown; animation-duration: 700ms; animation-timing-function: ease; animation-delay: 0ms; animation-direction: normal; animation-fill-mode: both;">
+                        SAIF <span class="underline-3 style-2 yellow">ENTERPRISES</span></h1>
+                    {#                    <p class="lead fs-24 text-white lh-sm mb-7 mx-md-13 mx-lg-10" data-cue="slideInDown"#}
+                    {#                       data-group="page-title" data-show="true"#}
+                    {#                       style="animation-name: slideInDown; animation-duration: 700ms; animation-timing-function: ease; animation-delay: 300ms; animation-direction: normal; animation-fill-mode: both;">#}
+                    {#                       Our team depends upon some of the most high professionals and field experts.#}
+                    {#                    </p>#}
+                    {#                    <div data-cue="slideInDown" data-group="page-title" data-show="true"#}
+                    {#                         style="animation-name: slideInDown; animation-duration: 700ms; animation-timing-function: ease; animation-delay: 600ms; animation-direction: normal; animation-fill-mode: both;">#}
+                    {#                        <a class="btn btn-white rounded mb-10 mb-xxl-5" href="{% url 'website:contact-us' %}">Contact#}
+                    {#                            Us</a>#}
+                    {#                    </div>#}
+                </div>
+                <!-- /column -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+        <div class="overflow-hidden">
+            <div class="divider text-light mx-n2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 60">
+                    <path fill="currentColor" d="M0,0V60H1440V0A5771,5771,0,0,1,0,0Z"></path>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    {# ABOUT US #}
+    <section class="wrapper bg-gradient-reverse-primary">
+        <div class="container py-16 py-md-18">
+            <div class="row gx-lg-8 gx-xl-12 gy-10 mb-8 align-items-center">
+                <div class="col-lg-7 order-lg-2">
+                    <figure><img class="" src="{% static 'website/core/base/i3.jpeg' %}"
+                                 srcset="{% static 'website/core/base/i3.jpeg' %} 2x" alt=""></figure>
+                </div>
+                <!--/column -->
+                <div class="col-lg-5">
+                    <h2 class="fs-16 text-uppercase text-muted mb-3">Lets Read</h2>
+                    <h3 class="display-4 mb-5">About Saif Enterprises</h3>
+                    <p class=""> Omni Enterprises is a leading Elevator & Escalator Company headquartered in
+                        Uganda, the company since its inception in 2010, engaged in installing superior quality local
+                        and foreign branded elevators and escalators.
+                    </p>
+                    <p>
+                        We also provide world-class installation services, repair services and maintenance services of
+                        elevator & escalator to residential and commercial customers.
+                    </p>
+                    <p>
+                        Saif Enterprises import elevators
+                        and escalators from USA, China, and Turkey. Our Major Brands are <b><a class="link-success">Shanghai
+                        Fuji Elevator</a></b> (China),
+                        <b><a class="link-warning">Merih Elevator</a></b> (Turkey), <b><a
+                            class="link-danger">Otis</a></b> (USA) and many other world-class elevators and
+                        escalators brands
+                        around the world.
+                    </p>
+                </div>
+                <!--/column -->
+            </div>
+            <!--/.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+    {# PRODUCTS #}
+    <section class="wrapper">
+        <div class="container pt-10 pb-15 pt-md-14 pb-md-20">
+            <div class="row gx-lg-8 gx-xl-12 gy-10 mb-5 align-items-center">
+                <div class="col-md-12 offset-md-1 offset-lg-0 col-lg-12 text-center text-lg-start order-2 order-lg-0"
+                     data-cues="slideInDown" data-group="page-title" data-delay="600">
+                    <h1 class="display-1 mb-5 mx-md-n5 mx-lg-0 text-center">Our Products</h1>
+                    <p class="lead fs-lg mb-7 text-center">Omni Enterprises deals in all kind of local and imported
+                        Elevator,
+                        Escalators and its parts. We offer passenger lift, Capsule lift, Cargo lift, and Escalators to
+                        residential and commercial customers across Pakistan.
+                    </p>
+                    <p class="lead fs-lg mb-7 text-center">Discover what types of equipment we import and provide safe,
+                        reliable and eco-friendly maneuverability in shopping centers, residential buildings and more.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="wrapper">
+        <div class="container  pb-9 pb-md-11 pb-md-17">
+            <div class="row gx-md-5 gy-5 mt-n18">
+                <div class="col-md-6 col-xl-3">
+                    <div class="card shadow-lg">
+                        <div class="card-body p-0 m-0">
+                            <figure class="hover-scale rounded cursor-dark">
+                                <a href="{% static 'website/core/elevators/car.jpeg' %}"
+                                   data-glightbox="title: ; description: "
+                                   data-gallery="post">
+                                    <img src="{% static 'website/core/elevators/car.jpeg' %}" alt="">
+                                </a>
+                            </figure>
+                        </div>
+                        <div class="card-body text-center">
+                            <h4>Car Elevator</h4>
+                            <a href="#" class="more hover link-success">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-3">
+                    <div class="card shadow-lg">
+                        <div class="card-body p-0 m-0">
+                            <figure class="hover-scale rounded cursor-dark">
+                                <a href="{% static 'website/core/elevators/service.jpeg' %}"
+                                   data-glightbox="title: ; description: "
+                                   data-gallery="post">
+                                    <img src="{% static 'website/core/elevators/service.jpeg' %}" alt="">
+                                </a>
+                            </figure>
+                        </div>
+                        <div class="card-body text-center">
+                            <h4>Service Elevator</h4>
+                            <a href="#" class="more hover link-warning">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-3">
+                    <div class="card shadow-lg">
+                        <div class="card-body p-0 m-0">
+                            <figure class="hover-scale rounded cursor-dark">
+                                <a href="{% static 'website/core/elevators/goods.jpeg' %}"
+                                   data-glightbox="title: ; description: "
+                                   data-gallery="post">
+                                    <img src="{% static 'website/core/elevators/goods.jpeg' %}" alt="">
+                                </a>
+                            </figure>
+                        </div>
+                        <div class="card-body text-center">
+                            <h4>Goods Elevator</h4>
+                            <a href="#" class="more hover link-danger">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-3">
+                    <div class="card shadow-lg">
+                        <div class="card-body p-0 m-0">
+                            <figure class="hover-scale rounded cursor-dark">
+                                <a href="{% static 'website/core/elevators/panoramic.jpeg' %}"
+                                   data-glightbox="title: ; description: "
+                                   data-gallery="post">
+                                    <img src="{% static 'website/core/elevators/panoramic.jpeg' %}" alt="">
+                                </a>
+                            </figure>
+                        </div>
+                        <div class="card-body text-center">
+                            <h4>Panoramic Elevator</h4>
+                            <a href="#" class="more hover link-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-3">
+                    <div class="card shadow-lg">
+                        <div class="card-body p-0 m-0">
+                            <figure class="hover-scale rounded cursor-dark">
+                                <a href="{% static 'website/core/elevators/home.jpeg' %}"
+                                   data-glightbox="title: ; description: "
+                                   data-gallery="post">
+                                    <img src="{% static 'website/core/elevators/home.jpeg' %}" alt="">
+                                </a>
+                            </figure>
+                        </div>
+                        <div class="card-body text-center">
+                            <h4>Home Elevator</h4>
+                            <a href="#" class="more hover link-success">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-3">
+                    <div class="card shadow-lg">
+                        <div class="card-body p-0 m-0">
+                            <figure class="hover-scale rounded cursor-dark">
+                                <a href="{% static 'website/core/elevators/escalator.jpeg' %}"
+                                   data-glightbox="title: ; description: "
+                                   data-gallery="post">
+                                    <img src="{% static 'website/core/elevators/escalator.jpeg' %}" alt="">
+                                </a>
+                            </figure>
+                        </div>
+                        <div class="card-body text-center">
+                            <h4>Escalators</h4>
+                            <a href="#" class="more hover link-yellow">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-3">
+                    <div class="card shadow-lg">
+                        <div class="card-body p-0 m-0">
+                            <figure class="hover-scale rounded cursor-dark">
+                                <a href="{% static 'website/core/elevators/hospital.jpeg' %}"
+                                   data-glightbox="title: ; description: "
+                                   data-gallery="post">
+                                    <img src="{% static 'website/core/elevators/hospital.jpeg' %}" alt="">
+                                </a>
+                            </figure>
+                        </div>
+                        <div class="card-body text-center">
+                            <h4>Hospital Elevator</h4>
+                            <a href="#" class="more hover link-danger">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-3">
+                    <div class="card shadow-lg">
+                        <div class="card-body p-0 m-0">
+                            <figure class="hover-scale rounded cursor-dark">
+                                <a href="{% static 'website/core/elevators/passenger.jpeg' %}"
+                                   data-glightbox="title: ; description: "
+                                   data-gallery="post">
+                                    <img src="{% static 'website/core/elevators/passenger.jpeg' %}" alt="">
+                                </a>
+                            </figure>
+                        </div>
+                        <div class="card-body text-center">
+                            <h4>Passenger Elevator</h4>
+                            <a href="#" class="more hover link-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {# OUR CLIENTS #}
+    <section class="wrapper bg-gray">
+        <div class="container py-14 py-md-17">
+            <div class="row text-center">
+                <div class="">
+                    <h3 class="display-4 mb-7">
+                        Our Clients
+                    </h3>
+                </div>
+            </div>
+            <div class="position-relative">
+                <div class="shape rounded-circle bg-soft-primary rellax w-16 h-16" data-rellax-speed="1"
+                     style="bottom: -0.5rem; right: -2.5rem; z-index: 0; transform: translate3d(0px, 210px, 0px);"></div>
+                <div class="shape bg-dot primary rellax w-16 h-17" data-rellax-speed="1"
+                     style="top: -0.5rem; left: -2.5rem; z-index: 0; transform: translate3d(0px, 44px, 0px);"></div>
+                <div class="row gx-md-5 gy-5 text-center">
+                    <div class="col-md-4 col-xl-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="icon btn btn-circle btn-lg btn-dark pe-none mb-3">
+                                    <i class="simple-icons:construct3"></i></div>
+                                <h4>MARINA HEIGHTS</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-xl-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="icon btn btn-circle btn-lg btn-primary pe-none mb-3"><i
+                                        class="simple-icons:construct3"></i></div>
+                                <h4>THE DIAMOND MALL</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-xl-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="icon btn btn-circle btn-lg btn-primary pe-none mb-3"><i
+                                        class="simple-icons:construct3"></i></div>
+                                <h4>SAIF HEIGHTS </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-xl-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="icon btn btn-circle btn-lg btn-primary pe-none mb-3"><i
+                                        class="simple-icons:construct3"></i></div>
+                                <h4>TOWN RESIDENCY</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-xl-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="icon btn btn-circle btn-lg btn-primary pe-none mb-3"><i
+                                        class="simple-icons:construct3"></i></div>
+                                <h4>DIR MALL</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-xl-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="icon btn btn-circle btn-lg btn-warning pe-none mb-3">
+                                    <i class="simple-icons:construct3"></i></div>
+                                <h4>SAIF MALL & RESIDENCY </h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    {# DIRECTORS #}
+    <section class="wrapper">
+        <div class="container py-15">
+
+            <div class="row mb-3">
+                <div class="col-md-10 col-lg-12 col-xl-10 col-xxl-9 mx-auto text-center">
+                    <h3 class="display-4 mb-7 px-lg-19 px-xl-18">
+                        Board Of Directors
+                    </h3>
+                    <p class="mb-6">The directors of the company are highly skilled, experienced, and have the valuable
+                        experience and financial resources. Their aim is to make this world a beautiful place to live
+                        for all of their customers.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row text-center gx-md-8 gx-xl-10 gy-8 gy-lg-0 align-items-center">
+
+                <div class="col">
+                    <div class="" role="group">
+                        <img class="rounded-circle w-20 mb-4"
+                             src="{% static 'website/core/team/img2.jpeg' %}" alt="">
+                        <h4 class="mb-1">Teefi Butt</h4>
+                        <div class="meta mb-2">CHIEF EXECUTIVE OFFICER</div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="" role="group">
+                        <img class="rounded-circle w-20 mb-4"
+                             src="{% static 'website/core/team/Junaid-Anwar-Marketing-Director.jpg' %}" alt="">
+                        <h4 class="mb-1">Gogi Butt</h4>
+                        <div class="meta mb-2">Finance Director</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    {# CONTACT US #}
+    <section class="wrapper bg-gray">
+        <div class="container">
+            <div class="row gx-lg-8 gx-xl-12 gy-10 align-items-center">
+                <div class="col-lg-12 text-center">
+                    <h3 class="display-4 mb-5">
+                        Contact Us
+                    </h3>
+                    <p class="lead fs-lg mb-7 text-center">
+                        Saif Enterprises is the subsidiary of Saif Group, offers elevator and escalator installation,
+                        maintenance & repairing services. We also import elevators & escalators for you.
+                        If you have any query, fill out the form or contact us on the given numbers below!!
+                    </p>
+                    <a href="{% url 'website:contact-us' %}" class="btn btn-primary rounded-pill mb-5 text-nowrap">Contact
+                        Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--    {# CLIENTS #}-->
+    <!--    <section class="wrapper bg-gray">-->
+    <!--        <div class="container py-14 py-md-16">-->
+    <!--            <div class="position-relative">-->
+    <!--                <div class="shape bg-dot primary rellax w-17 h-20" data-rellax-speed="1"-->
+    <!--                     style="top: 0; left: -1.7rem;"></div>-->
+    <!--                <div class="swiper-container dots-closer blog grid-view mb-6" data-margin="0" data-dots="true"-->
+    <!--                     data-items-xl="5" data-items-md="5" data-items-xs="2">-->
+    <!--                    <div class="swiper">-->
+    <!--                        <div class="swiper-wrapper">-->
+    <!--                            <div class="swiper-slide">-->
+    <!--                                <div class="item-inner">-->
+    <!--                                    <article>-->
+    <!--                                        <div class="">-->
+    <!--                                            <figure class="card-img-top overlay overlay-1 hover-scale">-->
+    <!--                                                <img src="{% static 'website/core/footer/img1.jpeg' %}" alt=""/>-->
+    <!--                                            </figure>-->
+    <!--                                        </div>-->
+    <!--                                    </article>-->
+    <!--                                </div>-->
+    <!--                            </div>-->
+    <!--                            <div class="swiper-slide">-->
+    <!--                                <div class="item-inner">-->
+    <!--                                    <article>-->
+    <!--                                        <div class="">-->
+    <!--                                            <figure class="card-img-top overlay overlay-1 hover-scale">-->
+    <!--                                                <img src="{% static 'website/core/footer/img2.jpeg' %}" alt=""/>-->
+    <!--                                            </figure>-->
+    <!--                                        </div>-->
+    <!--                                    </article>-->
+    <!--                                </div>-->
+    <!--                            </div>-->
+    <!--                            <div class="swiper-slide">-->
+    <!--                                <div class="item-inner">-->
+    <!--                                    <article>-->
+    <!--                                        <div class="">-->
+    <!--                                            <figure class="card-img-top overlay overlay-1 hover-scale">-->
+    <!--                                                <img src="{% static 'website/core/footer/img3.jpeg' %}" alt=""/>-->
+    <!--                                            </figure>-->
+    <!--                                        </div>-->
+    <!--                                    </article>-->
+    <!--                                </div>-->
+    <!--                            </div>-->
+    <!--                            <div class="swiper-slide">-->
+    <!--                                <div class="item-inner">-->
+    <!--                                    <article>-->
+    <!--                                        <div class="">-->
+    <!--                                            <figure class="card-img-top overlay overlay-1 hover-scale">-->
+    <!--                                                <img src="{% static 'website/core/footer/img4.jpeg' %}" alt=""/>-->
+    <!--                                            </figure>-->
+    <!--                                        </div>-->
+    <!--                                    </article>-->
+    <!--                                </div>-->
+    <!--                            </div>-->
+    <!--                            <div class="swiper-slide">-->
+    <!--                                <div class="item-inner">-->
+    <!--                                    <article>-->
+    <!--                                        <div class="">-->
+    <!--                                            <figure class="card-img-top overlay overlay-1 hover-scale">-->
+    <!--                                                <img src="{% static 'website/core/footer/img5.jpeg' %}" alt=""/>-->
+    <!--                                            </figure>-->
+    <!--                                        </div>-->
+    <!--                                    </article>-->
+    <!--                                </div>-->
+    <!--                            </div>-->
+    <!--                        </div>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--            </div>-->
+    <!--        </div>-->
+    <!--    </section>-->
+
+{% endblock %}

@@ -1,0 +1,402 @@
+{% extends 'website/base.html' %}
+{% load static %}
+
+{% block sub_head %}
+    Our Team
+{% endblock %}
+
+{% block content %}
+
+    <section class="wrapper image-wrapper bg-image bg-overlay bg-overlay-300"
+             data-image-src="{% static 'website/img/photos/bg4.jpg' %}"
+             style="background-image: url(&{% static 'website/img/photos/bg16.png' %}&quot;);">
+        <div class="container pt-17 pb-19 pt-md-18 pb-md-17 text-center">
+            <div class="row">
+                <div class="col-lg-8 col-xl-7 col-xxl-6 mx-auto" data-cues="slideInDown" data-group="page-title"
+                     data-disabled="true">
+                    <h1 class="display-1 text-white fs-60 mb-4 px-md-15 px-lg-0" data-cue="slideInDown"
+                        data-group="page-title" data-show="true"
+                        style="animation-name: slideInDown; animation-duration: 700ms; animation-timing-function: ease; animation-delay: 0ms; animation-direction: normal; animation-fill-mode: both;">
+                        Lets Meet our <span class="underline-3 style-2 yellow">Team?</span></h1>
+                    <p class="lead fs-24 text-white lh-sm mb-7 mx-md-13 mx-lg-10" data-cue="slideInDown"
+                       data-group="page-title" data-show="true"
+                       style="animation-name: slideInDown; animation-duration: 700ms; animation-timing-function: ease; animation-delay: 300ms; animation-direction: normal; animation-fill-mode: both;">
+                        Our team depends upon some of the most high professionals and field experts.
+                    </p>
+                    <div data-cue="slideInDown" data-group="page-title" data-show="true"
+                         style="animation-name: slideInDown; animation-duration: 700ms; animation-timing-function: ease; animation-delay: 600ms; animation-direction: normal; animation-fill-mode: both;">
+                        <a class="btn btn-white rounded mb-10 mb-xxl-5" href="{% url 'website:contact-us' %}">Contact
+                            Us</a>
+                    </div>
+                </div>
+                <!-- /column -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+        <div class="overflow-hidden">
+            <div class="divider text-light mx-n2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 60">
+                    <path fill="currentColor" d="M0,0V60H1440V0A5771,5771,0,0,1,0,0Z"></path>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <section class="wrapper bg-gray">
+        <div class="container py-15">
+
+            <div class="row mb-3">
+                <div class="col-md-10 col-lg-12 col-xl-10 col-xxl-9 mx-auto text-center">
+                    <h3 class="display-4 mb-7 px-lg-19 px-xl-18">
+                        Board Of Directors
+                    </h3>
+                    <p class="mb-6">The directors of the company are highly skilled, experienced, and have the valuable
+                        experience and financial resources. Their aim is to make this world a beautiful place to live
+                        for all of their customers.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row text-center gx-md-8 gx-xl-10 gy-8 gy-lg-0 align-items-center">
+
+                <div class="col">
+                    <div class="" role="group">
+                        <img class="rounded-circle w-20 mb-4"
+                             src="{% static 'website/core/team/Azizullah-Khan-Chairman.jpg' %}" alt="">
+                        <h4 class="mb-1">Aziz Ullah Khan Marwat</h4>
+                        <div class="meta mb-2">Chairman</div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="" role="group">
+                        <img class="rounded-circle w-20 mb-4"
+                             src="{% static 'website/core/team/img2.jpeg' %}" alt="">
+                        <h4 class="mb-1">Kalim Ullah Marwat</h4>
+                        <div class="meta mb-2">Chief Executive Officer </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="" role="group">
+                        <img class="rounded-circle w-20 mb-4"
+                             src="{% static 'website/core/team/imran ullah.png' %}" alt="">
+                        <h4 class="mb-1">Imran Ullah Marwat</h4>
+                        <div class="meta mb-2">Member Board of Director</div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="" role="group">
+                        <img class="rounded-circle w-20 mb-4"
+                             src="{% static 'website/core/team/Anwar-Khan-Board-of-Director.jpg' %}" alt="">
+                        <h4 class="mb-1">Anwar Khan</h4>
+                        <div class="meta mb-2">Member Board of Director</div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="" role="group">
+                        <img class="rounded-circle w-20 mb-4"
+                             src="{% static 'website/core/team/Junaid-Anwar-Marketing-Director.jpg' %}" alt="">
+                        <h4 class="mb-1">Junaid Anwar Khan</h4>
+                        <div class="meta mb-2">Director Marketing</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="wrapper mt-14">
+        <div class="container">
+            <div class="card bg-soft-primary rounded-4 mb-5">
+                <div class="card-body">
+                    <div class="row align-items-center">
+                        <div class="col-lg-3 col-md-6 col-sm-12 text-center">
+                            <img class="rounded-circle"
+                                 src="{% static 'website/core/team/Azizullah-Khan-Chairman.jpg' %}" height="200" alt=""
+                                 data-cue="fadeIn">
+                        </div>
+                        <!--/column -->
+                        <div class="col-lg-9 col-md-6 col-sm-12 text-lg-end" data-cues="slideInDown"
+                             data-group="page-title"
+                             data-delay="600">
+                            <h4 class="mb-5 text-center">
+                                Aziz Ullah Khan Marwat (Chairman)</h4>
+                            <p class="mb-7 pl7 text-center">
+                                "We are excited to have you here and hope that you find our platform informative and
+                                useful in your search for your dream property. Our team of experienced and knowledgeable
+                                real estate professionals is dedicated to providing you with the best possible service,
+                                whether you are buying or selling a property. We understand that real estate
+                                transactions can be complex and stressful, but we are here to guide you every step of
+                                the way. Thank you for choosing us as your real estate partner, and we look forward to
+                                helping you achieve your real estate goals."
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="wrapper">
+        <div class="container pb-14">
+            <div class="card bg-soft-primary rounded-4 mb-5">
+                <div class="card-body p-md-10 py-xl-11 px-xl-15">
+                    <div class="row gx-lg-8 gx-xl-0 gy-10 align-items-center">
+
+                        <div class="col-lg-10 text-center text-lg-start" data-cues="slideInDown" data-group="page-title"
+                             data-delay="600">
+                            <h5 class="mb-5 text-center">
+                                Kalim Ullah Marwat (CEO)</h5>
+                            <p class="mb-7 pe-xl-10 text-center">
+                                "I am delighted to welcome you to our platform. Our platform is designed to make your
+                                real estate journey as seamless and stress-free as possible. Whether you are a
+                                first-time buyer, seasoned investor, or simply looking for a new home, we have something
+                                to suit your needs. Our team of dedicated professionals is committed to providing you
+                                with the highest level of service and support, and we are always on hand to answer any
+                                questions or concerns you may have.
+                                Thank you for choosing us.
+                                "
+                            </p>
+
+                        </div>
+                        <div class="col-lg-2 order-lg-2 text-center">
+                            <img class="rounded-circle" src="{% static 'website/core/team/img2.jpeg' %}" height="200"
+                                 alt=""
+                                 data-cue="fadeIn">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="wrapper bg-gray">
+        <div class="container py-15">
+
+            <div class="row mb-3">
+                <div class="col-md-10 col-lg-12 col-xl-10 col-xxl-9 mx-auto text-center">
+                    <h3 class="display-4 mb-7 px-lg-19 px-xl-18">
+                        Members of Team
+                    </h3>
+                    <p class="mb-6">With the support of an exceptionally experienced and qualified marketing and
+                        advertising team, The company has built a solid reputation of success and has achieved
+                        exceptional results in real estate market in Peshawar. Meet our dedicated Core Team Members!
+                    </p>
+                </div>
+            </div>
+
+            <div class="row text-center gx-md-8 gx-xl-10 gy-8 gy-lg-0 align-items-center">
+
+                <div class="col">
+                    <div class="" role="group">
+                        <img class="rounded-circle w-20 mb-4"
+                             src="{% static 'website/core/team/farhan.png' %}" alt="">
+                        <h4 class="mb-1">Farhan Marwat</h4>
+                        <div class="meta mb-2">Assistant Director</div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="" role="group">
+                        <img class="rounded-circle w-20 mb-4"
+                             src="{% static 'website/core/team/irfan_tahir.png' %}" alt="">
+                        <h4 class="mb-1">Irfan Khan Marwat</h4>
+                        <div class="meta mb-2">Finance Director</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="" role="group">
+                        <img class="rounded-circle w-20 mb-4"
+                             src="{% static 'website/core/team/hazrat_shah.png' %}" alt="">
+                        <h4 class="mb-1">Hazrat Shah</h4>
+                        <div class="meta mb-2">Head Of Department</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="" role="group">
+                        <img class="rounded-circle w-20 mb-4"
+                             src="{% static 'website/core/team/roman_shinwari.png' %}" alt="">
+                        <h4 class="mb-1">Roman Shinwari</h4>
+                        <div class="meta mb-2">Manager Sales & Marketing</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="" role="group">
+                        <img class="rounded-circle w-20 mb-4"
+                             src="{% static 'website/core/team/awais_marwat.png' %}" alt="">
+                        <h4 class="mb-1">Awais Marwat</h4>
+                        <div class="meta mb-2">HR Manager</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="" role="group">
+                        <img class="rounded-circle w-20 mb-4"
+                             src="{% static 'website/core/team/rashid_manzoor.jpeg' %}" alt="">
+                        <h4 class="mb-1">Rashid Manzoor</h4>
+                        <div class="meta mb-2">Chief Finance Officer</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="" role="group">
+                        <img class="rounded-circle w-20 mb-4"
+                             src="{% static 'website/core/team/abdullah_awan.png' %}" alt="">
+                        <h4 class="mb-1">Abdullah Awan</h4>
+                        <div class="meta mb-2">Senior Accounts Manager</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="" role="group">
+                        <img class="rounded-circle w-20 mb-4"
+                             src="{% static 'website/core/team/ammar_taj.png' %}" alt="">
+                        <h4 class="mb-1">Amar Taj</h4>
+                        <div class="meta mb-2">Senior Accounts Manager</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="" role="group">
+                        <img class="rounded-circle w-20 mb-4"
+                             src="{% static 'website/core/team/shayan_ullah.png' %}" alt="">
+                        <h4 class="mb-1">Shayan Ullah</h4>
+                        <div class="meta mb-2">Mentor, Trainer & Team Leader</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="" role="group">
+                        <img class="rounded-circle w-20 mb-4"
+                             src="{% static 'website/core/team/afnan_latif.png' %}" alt="">
+                        <h4 class="mb-1">Afnan Latif</h4>
+                        <div class="meta mb-2">Digital Marketing Manager</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="" role="group">
+                        <img class="rounded-circle w-20 mb-4"
+                             src="{% static 'website/core/team/junaid_fayaz.png' %}" alt="">
+                        <h4 class="mb-1">Junaid Fayaz</h4>
+                        <div class="meta mb-2">Chief Internal Auditor</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="" role="group">
+                        <img class="rounded-circle w-20 mb-4"
+                             src="{% static 'website/core/team/muhammad_rasheed.png' %}" alt="">
+                        <h4 class="mb-1">Muhammad Rasheed</h4>
+                        <div class="meta mb-2">Management Reporting Specialist</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="" role="group">
+                        <img class="rounded-circle w-20 mb-4"
+                             src="{% static 'website/core/team/sadiq_marwat.png' %}" alt="">
+                        <h4 class="mb-1">Sadiq Marwat</h4>
+                        <div class="meta mb-2">Team Leader</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="" role="group">
+                        <img class="rounded-circle w-20 mb-4"
+                             src="{% static 'website/core/team/azmat_shinwari.png' %}" alt="">
+                        <h4 class="mb-1">Azmat Shinwari</h4>
+                        <div class="meta mb-2">Team Leader</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="" role="group">
+                        <img class="rounded-circle w-20 mb-4"
+                             src="{% static 'website/core/team/iftikhar_hussain.png' %}" alt="">
+                        <h4 class="mb-1">Iftikhar Hussain</h4>
+                        <div class="meta mb-2">Team Leader</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="" role="group">
+                        <img class="rounded-circle w-20 mb-4"
+                             src="{% static 'website/core/team/faisal_shahzad.png' %}" alt="">
+                        <h4 class="mb-1">Faisal Shahzad</h4>
+                        <div class="meta mb-2">Team Leader</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="" role="group">
+                        <img class="rounded-circle w-20 mb-4"
+                             src="{% static 'website/core/team/amna_usman.png' %}" alt="">
+                        <h4 class="mb-1">Amna Usman</h4>
+                        <div class="meta mb-2">Female Team Leader</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="" role="group">
+                        <img class="rounded-circle w-20 mb-4"
+                             src="{% static 'website/core/team/Mubasher_Ahmad.png' %}" alt="">
+                        <h4 class="mb-1">Mubasher Ahmad</h4>
+                        <div class="meta mb-2">Tax Manager</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="" role="group">
+                        <img class="rounded-circle w-20 mb-4"
+                             src="{% static 'website/core/team/Muhammad_Baseer_Afridi.png' %}" alt="">
+                        <h4 class="mb-1">Muhammad Baseer Afridi </h4>
+                        <div class="meta mb-2">Administrator Filing Department</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="" role="group">
+                        <img class="rounded-circle w-20 mb-4"
+                             src="{% static 'website/core/team/Zia_Ur_Rahman.png' %}" alt="">
+                        <h4 class="mb-1">Zia Ur Rehman </h4>
+                        <div class="meta mb-2">HR Manager </div>
+                    </div>
+                </div>
+
+<!--                <div class="col">-->
+<!--                    <div class="" role="group">-->
+<!--                        <img class="rounded-circle w-20 mb-4"-->
+<!--                             src="{% static 'website/core/team/fawad-alam.png' %}" alt="">-->
+<!--                        <h4 class="mb-1">Fawad Alam</h4>-->
+<!--                        <div class="meta mb-2">Accounts Manager</div>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+<!--                <div class="col">-->
+<!--                    <div class="" role="group">-->
+<!--                        <img class="rounded-circle w-20 mb-4"-->
+<!--                             src="{% static 'website/core/team/wakas.png' %}" alt="">-->
+<!--                        <h4 class="mb-1">Waqas Marwat</h4>-->
+<!--                        <div class="meta mb-2">Property Consultant</div>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+<!--                <div class="col">-->
+<!--                    <div class="" role="group">-->
+<!--                        <img class="rounded-circle w-20 mb-4"-->
+<!--                             src="{% static 'website/core/team/abdulreman.png' %}" alt="">-->
+<!--                        <h4 class="mb-1">Sales Executive</h4>-->
+<!--                        <div class="meta mb-2">Abdul Reman Shah</div>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+<!--                <div class="col">-->
+<!--                    <div class="" role="group">-->
+<!--                        <img class="rounded-circle w-20 mb-4"-->
+<!--                             src="{% static 'website/core/team/shamoon2.jpeg' %}" alt="">-->
+<!--                        <h4 class="mb-1">Shamoon Marwat</h4>-->
+<!--                        <div class="meta mb-2">Property Consultant</div>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+
+
+
+
+
+
+            </div>
+        </div>
+    </section>
+
+{% endblock %}
